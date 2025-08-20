@@ -3,18 +3,19 @@ public class Auto {
 
         //CARATTERISTCHE /FIELD --> l'insieme definisce lo STATO INTERNO DI UN OGGETTO.
         //modificatore di visibilità - tipo - variaile;
-        public String colore; // = "red"; -> così ho inizializzato l'attributo e non avverrà la zero-inizzialization
-        public String marca;
-        public int annoImmatricolazione;
-        public String modello;
-        public String alimentazione;
-        public String targa;
-        public double kmPercorsi;
-        public int proprietariPrecedenti;
-        public int numeroPosti;
-        public int numeroPorte;
-        public double cilindrata;
-        public void descriviAuto(){ //metodo descrittivo - uso del metodo in App.java.32
+        private String colore; // = "red"; -> così ho inizializzato l'attributo e non avverrà la zero-inizzialization
+        private String marca;
+        private int annoImmatricolazione;
+        private String modello;
+        private String alimentazione;
+        private String targa;
+        private double kmPercorsi;
+        private int proprietariPrecedenti;
+        private int numeroPosti;
+        private int numeroPorte;
+        private double cilindrata;
+
+        public  void descriviAuto(){ //metodo descrittivo - uso del metodo in App.java.32
                 System.out.println("L'automobile ha " + numeroPosti + " posti, ha " + numeroPorte + " porte, è  " + cilindrata + " di cilindrata, "
                         + " e ha " + targa + " come numero di targa." );
         }
@@ -88,4 +89,75 @@ public class Auto {
                 }
                 return risultato;
         }
+
+//aggiungo tutti i get
+        public String getColore() {
+                return colore;
+        }
+
+        public String getMarca() {
+                return marca;
+        }
+
+        public int getAnnoImmatricolazione() {
+                return annoImmatricolazione;
+        }
+
+        public String getModello() {
+                return modello;
+        }
+
+        public String getAlimentazione() {
+                return alimentazione;
+        }
+
+        public String getTarga() {
+                return targa;
+        }
+
+        public double getKmPercorsi() {
+                return kmPercorsi;
+        }
+
+        public int getProprietariPrecedenti() {
+                return proprietariPrecedenti;
+        }
+
+        public int getNumeroPosti() {
+                return numeroPosti;
+        }
+
+        public int getNumeroPorte() {
+                return numeroPorte;
+        }
+
+        public double getCilindrata() {
+                return cilindrata;
+        }
+
+       
+//setter
+
+         public void setAlimentazione(String alimentazione) {
+                this.alimentazione = alimentazione;
+        }
+
+         public void setNumeroPosti(int numeroPosti) {
+                 this.numeroPosti = numeroPosti;
+         }
+
+         public void setNumeroPorte(int numeroPorte) {
+                 this.numeroPorte = numeroPorte;
+         }
+
+         public void setCilindrata(double cilindrata) {
+                 this.cilindrata = cilindrata;
+         }
+
+         public void setTarga(String targa) {
+                 this.targa = targa;
+         }
+
+        
+        
 }
