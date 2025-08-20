@@ -1,0 +1,83 @@
+08.07
+
+OOP - OBJECT ORIENTED PROGRAMMI ( programmazione a oggetti)
+Java è un linguaggio di programmazione orientato ad oggetti...cioè?
+
+Esistono 3 paradigmi di programmazione:
+-> Programmazione Procedurale: io do dei comandi singoli e vengono eseguiti.
+-> Programmazione Funzionale: tipo di organizzazione delle funzioni. La programmazione è come un insieme di 
+funzioni matematiche richiamate in modo organizzato.(al posto della variabile ho le funzioni).
+-> Programmazione orientata agli oggetti: Java nasce come programmazione ad oggetti.
+|-> si basa sul concetto di CLASSE e OGGETTO.
+Perchè dovrei usare la programmazione ad oggetti? Perchè è un modo di programmare che imita il mondo reale ( il mondo è orientato ad
+oggetti...mouse,comodino,tastiera....). La programmazione procedurale inizia ad essere scomoda perchè se devo scrivere molto codice è complicato.
+-> tutti gli oggetti hanno: 
+    - delle caratteristiche;
+    - uno stato; -stato di interazione , se è spento non posso fare nulla se non accenderlo.
+    - delle azioni con cui interagiscono tra loro e con il mondo esterno; - funzionalità di interazione.
+Noi sappiamo dare un nome ad un oggetto perchè ha delle caratteristiche comuni agli altro oggetti della stessa classe...
+- un monitor - esempio.. un monitor ha:
+    - caratteristiche: dimensioni, marca, modello, ... (tutti i monitor hanno delle caratteristiche)
+    - stato: acceso/spento,...
+    - azioni: possibilità di accendere/spegnere, regolare luminosita, ...
+- un telefono (differisce tra un telefono e un altro per alcune caratteristiche. Se metti due telefoni vicini, potresti non
+capire subito il modello, ma che si tratta di telefoni lo capisci subito grazie alle caratteristiche comuni.)
+- una pianta
+- una persona
+
+->posso astrarre le caratteristiche del mondo reali per programmare.
+Tutti abbiamo un OGGETTO che ha delle caratteristiche che lo identificano con il nostro modello astratto di monitor, cioè sono 
+ISTANZE DI UNA CLASSE - definita la classe monitor, con delle caratteristiche, dato che tutti noi abbiamo un monitor, abbiamo 
+istanze della classe monitor con caratteristiche comuni e non.
+- i nostri monitor hanno tutti degli attributi(marca, dimensioni, modello) il cui valore cambia da oggetto ad oggetto.
+- i nostri monitor possono essere accesi o spenti, ma lo stato di un oggetto non interferisce con quello degli altri oggetti
+    della stessa classe. - se io spengo il monitor, non spengo i monitor di tutti - .
+- i monitor hanno dei metodi con cui possiamo eseguire delle azioni e modificarne lo stato - accendere o spegnere -.
+-----------
+CLASSE = MODELLO              OGGETTI = ISTANZE
+|                               |
+L se io prendo il               L singole macchine e 
+progetto di una macchina          modelli diversi ------> tutte diverse tra loro ma tutte sono macchine.
+questo è il suo 
+modello
+
+-> una volta creato, un oggetto si comporta come un mondo a parte, indipendente dagli altri oggetti. 
+    Un oggetto ha le sue caratteristiche ( attributi) e può comunicare con il mondo esterno con i propri metodi.
+
+----> esempio Class Auto.(vedi Auto.Java) ------ Ogni istanza ha i propri attributi, il cui valore costituisce lo STATO INTERNO DELLA CLASSE.
+
+--------------
+-> ATTRIBUTI : sono delle variabili e possono cambiare valore.
+La classe è una sola ma posso creare tanti oggetti. Ogni oggetto ha gli stessi attributi, ma ognuno con il suo valore.
+Il valore che gli attributi di un oggetto assumono in ogni momento ne definiscono lo "stato".
+
+--------------
+-> METODI : sono dei sottoprogrammi che servono a compiere azioni. - come interagisco con l'oggetto - 
+La classe può avere dei metodi, che hanno:
+- un tipo di dato restituito - se non voglio restituire nulla metto void.
+- un nome - per poter essere richiamato - 
+- dei parametri in ingresso (opzionale)
+Se un metodo ritorna un tipo di dato non vuoto (void) deve avere una istruzione di RETURN.
+
+---App.java,Auto.java---
+
+METODO MAIN: ci permette di lanciare l'esecuzione della classe. Per poter lanciare un metodo di una classe definito da me, se 
+non lo invoco nel main non può essere eseguito.
+
+-------------
+COSTRUTTORI: è un metodo speciale perchè non ha nome (si chiama come la classe) e non ha il ritorno.
+A cosa serve: far riservare un riferimento alla cella di memoria e fare la zero-inizializzation.(attributi di istanza)
+Quale è lo scopo di fare un costruttore se gia ci pensa java? Perchè posso dare valori inizializzati diversi da quelli di defoult.
+
+-Auto.java.42
+
+Come invoco il Costruttore? con il NEW. 
+
+------------
+
+In molti linguaggi di programmazione non è possibile avere due metodi che si chiamano nello stesso modo.
+OVERLOAD - il suo scopo è avere più metodi che si chiamano nello stesso modo, ma con parametri diversi o in numero o in tipo.
+|_ Auto.java.54
+
+->DOMANDA: COME POSSO RENDERE IL CODICE ROBUSTO PER FAR SI CHE SE IO DEVO FAR PASSARE PER FORZA UN VALORE, NON MI METTINO UN NULL?
+-AUTO.JAVA.48
